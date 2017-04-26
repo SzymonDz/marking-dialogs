@@ -1,0 +1,25 @@
+# Keybindings require three things to be fully defined: A selector that is
+# matched against the focused element, the keystroke and the command to
+# execute.
+#
+# Below is a basic keybinding which registers on all platforms by applying to
+# the root workspace element.
+
+# For more detailed documentation see
+# https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+'atom-workspace':
+  'ctrl-alt-o': 'marking-dialogs:toggle'
+
+'atom-text-editor':
+  'ctrl-alt-d': 'marking-dialogs:wrap-with-<d>'
+  'ctrl-alt-s': 'marking-dialogs:wrap-with-<ds>'
+  'ctrl-alt-t': 'marking-dialogs:wrap-with-<dt>'
+  'ctrl-alt-w': 'marking-dialogs:wrap-with-<dl>'
+  'ctrl-alt-q': 'marking-dialogs:wrap-with-<dp>'
+  'ctrl-alt-c': 'marking-dialogs:wrap-with-<dc>'
+  'ctrl-alt-shift-d': 'marking-dialogs:wrap-with-<d+>'
+  'ctrl-alt-shift-s': 'marking-dialogs:wrap-with-<ds+>'
+  'ctrl-alt-shift-t': 'marking-dialogs:wrap-with-<dt+>'
+  'ctrl-alt-shift-w': 'marking-dialogs:wrap-with-<dl+>'
+  'ctrl-alt-shift-q': 'marking-dialogs:wrap-with-<dp+>'
+  'ctrl-alt-shift-c': 'marking-dialogs:wrap-with-<dc+>'
