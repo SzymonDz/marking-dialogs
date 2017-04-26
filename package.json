@@ -2,13 +2,16 @@
   "name": "marking-dialogs",
   "main": "./lib/marking-dialogs",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Package for easy wrapping dialogs with tag <d></d>",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "marking-dialogs:toggle"
   },
-  "repository": "https://github.com/atom/marking-dialogs",
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/SzymonDz/marking-dialogs.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
