@@ -1,0 +1,11 @@
+'scopeName': 'source.mylanguage'
+'name': 'Mylanguage'
+'fileTypes': ['txt']
+
+'patterns': [
+  {
+    'begin':'<d>|<d type=\'(thought|song|letter|poem)\'>|<d type=\'(thought|song|letter|poem)\' layer=\'(0|1)\'>'
+    'end': '</d>'
+    'name': 'string.quoted.single.dialog'
+  }
+]
