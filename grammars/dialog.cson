@@ -4,8 +4,20 @@
 
 'patterns': [
   {
-    'begin':'<d( type=\'(thought|song|letter|poem|continuation)\')*( layer=\'(0|1)\')*>'
+    'begin': '<d( type=\'(thought|song|letter|poem|continuation)\')*( layer=\'(0|1)\')*>'
+    'beginCaptures':
+      '0':
+        'name': 'constant.numeric.dialog'
     'end': '</d>'
-    'name': 'string.quoted.single.dialog'
+    'endCaptures':
+      '0':
+        'name': 'constant.numeric.dialog'
+    'name': 'string.dialog'
+    'patterns': [
+      {
+        'match': '<d( type=\'(thought|song|letter|poem|continuation)\')*( layer=\'(0|1)\')*>|</d>'
+        'name': 'constant.language.dialog'
+      }
+    ]
   }
 ]
