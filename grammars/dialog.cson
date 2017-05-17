@@ -15,8 +15,9 @@
     'name': 'string.dialog'
     'patterns': [
       {
-        'match': '<d( type=\'(thought|song|letter|poem|continuation)\')*( layer=\'(0|1)\')*>|</d>'
-        'name': 'constant.language.dialog'
+        'begin': '<d( type=\'(thought|song|letter|poem|continuation)\')*( layer=\'(0|1)\')*>'
+        'end': '</d>'
+        'name': 'entity.name.function.dialog'
       }
     ]
   }
