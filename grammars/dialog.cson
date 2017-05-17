@@ -4,7 +4,7 @@
 
 'patterns': [
   {
-    'begin':'<d>|<d type=\'(thought|song|letter|poem)\'>|<d type=\'(thought|song|letter|poem)\' layer=\'(0|1)\'>'
+    'begin':'<d( type=\'(thought|song|letter|poem|continuation)\')*( layer=\'(0|1)\')*>'
     'end': '</d>'
     'name': 'string.quoted.single.dialog'
   }
